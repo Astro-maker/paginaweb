@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title{
+    font-size: 2rem;
+    color: #ca710a;
+}
+
+/*
+Hero section
+*/
+
+#hero{
+    background-image: url(./img/back-2.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#hero .hero{
+    max-width: 1200px;
+    margin-top: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    position: relative;
+    color: white;
+}
+
+#hero .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid  #ca710a;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+}
+#hero .cta:hover{
+    color:white;
+    background-color:  #ca710a;
+}
+
+/*end of hero section
+*/
+#hero .main-text{
+    width: 80%;
+    padding: 20px 0;
+}
+
+/*Beneficios
+*/
+
+#info{
+    background-color: #21596b;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 1;
+
+}
+#info::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#info .info{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+
+
+#info .service-top p{
+    font-size: 1rem;
+    margin-top: 5px;
+    line-height: 1rem;
+    font-weight: 300;
+    color: #ca710a;
+}
+
+#info .service-bottom{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: black;
+}
+
+#info .service-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./img/img-1.png);
+    background-size: cover;
+    margin: 10px 5%;
+}
+
+/* End beneficios
+*/
+
+/*about*/
+
+#about{
+    background-image: url(./img/hero-bg.png);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 1;
+
+}
+#about::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#about .about{
+    flex-direction: column;
+    max-width: 1200;
+    margin: 0 auto;
+}
+
+#about .about-us h1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#about .about-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about .about-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    line-height: 2rem;
+    background-color:hsl(196, 65%, 10%);
+    color: #ca710a;
+}
+
+#about .about-info{
+    width: 70%;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*End bout*/
+
+/*Contact*/
+
+#contact{
+    background-color: hsl(194, 55%, 15%);
+    position: relative;
+    max-height: 90vh;
+    min-height: 90vh;
+    z-index: 1;
+}
+#contact::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0;
+    z-index: -1;
+}
+
+#contact .contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact .section-title{
+    margin-top: 30px;
+}
+
+#contact .contact-way .icon{
+    margin-top: 50px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+}
+#contact .contact-way a{
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+
